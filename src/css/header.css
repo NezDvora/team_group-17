@@ -1,21 +1,41 @@
-.header {
-  padding: 20px 0;
+@media screen and (min-width: 376px){
+  .container {
+      width: 346px;
+  }
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+@media screen and (min-width: 768px){
+  .container {
+      width: 738px;
+  }
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+@media screen and (min-width: 1200px){
+  .container {
+      width: 1160px;
+  }
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+/* MOBILE-MENU-0-767px */
+@media screen and (max-width: 375px){
+
+}
+@media screen and (min-width: 376px){
+
+}
+@media screen and (max-width: 767px){
+
+}
+
+/* TABLET-768-1200px */
+@media screen and (min-width: 768px){
+
+}
+@media screen and (max-width: 1199px){
+
+}
+
+/* PC-1200px-8 */
+@media screen and (min-width: 1200px){
+
 }
