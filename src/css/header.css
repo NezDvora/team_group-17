@@ -81,7 +81,7 @@
 .nav-mobile {
   display: flex;
   flex-direction: column;
-  color: #ffffff;
+  color: white;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -110,15 +110,16 @@
 
 }
 
-.social-link .icon-header {
-  fill: #ffffff;
+.link-desktop .icon-header {
+  fill: white;
+  stroke: #111111;
   width: 22px;
   height: 22px;
 }
 
-.social-link:hover .icon-header,
-.social-link:focus .icon-header {
-  fill: #FD9222;
+.link-desktop:hover .icon-header,
+.link-desktop:focus .icon-header {
+  stroke: #FD9222;
 }
 @media screen and (min-width: 768px) {
   
@@ -168,11 +169,13 @@
   }
 
  
-
-
   .nav-desktop-header .item-header:hover,
   .nav-desktop-header .item-header:focus {
     color: #FD9222;
+  }
+  .icon-header {
+    fill: transparent;
+    stroke: #111111;
   }
 
 }
