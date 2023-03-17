@@ -34,7 +34,11 @@
   background-color: #ffffff;
   align-items: center;
   padding: 0;
+  
+}
 
+.header-bur {
+  stroke: #111111;
 }
 
 .header {
