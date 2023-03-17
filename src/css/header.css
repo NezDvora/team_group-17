@@ -23,6 +23,7 @@
   height: 21px;
   background-image: url(../img/symbol-defs.svg#icon-logo_tab_mob);
   background-repeat: no-repeat;
+  z-index: 50;
 
 }
 
