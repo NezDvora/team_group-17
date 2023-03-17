@@ -8,7 +8,7 @@
   align-items: center;
   height: 28px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 0.78;
   letter-spacing: -0.03em;
 }
 
@@ -23,8 +23,6 @@
   height: 21px;
   background-image: url(../img/symbol-defs.svg#icon-logo_tab_mob);
   background-repeat: no-repeat;
-  z-index: 50;
-
 }
 
 .burger-btn {
@@ -89,7 +87,7 @@
   color: white;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 0.87;
   letter-spacing: -0.02em;
   margin-top: 136px;
 
@@ -154,7 +152,7 @@
   .nav-desktop-header {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 0.87;
     display: flex;
     gap: 24px;
     align-items: center;
@@ -164,7 +162,7 @@
 
   .logo-header {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 0.9;
   }
 
   .logo-header::after {
@@ -184,3 +182,4 @@
   }
 
 }
+
