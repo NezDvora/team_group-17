@@ -1,22 +1,24 @@
-@media screen and (min-width: 376px){
+@media screen and (min-width: 376px) {
     .container {
         width: 346px;
     }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     .container {
         width: 738px;
     }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
     .container {
         width: 1160px;
     }
 }
 
-/* MOBILE-MENU-0-767px */
+
+
+/* MOBILE-MENU-0-767px
 @media screen and (max-width: 375px){
 
 }
@@ -28,7 +30,7 @@
 }
 
 /* TABLET-768-1200px */
-@media screen and (min-width: 768px){
+/* @media screen and (min-width: 768px){
 
 }
 @media screen and (max-width: 1199px){
@@ -36,6 +38,7 @@
 }
 
 /* PC-1200px-8 */
-@media screen and (min-width: 1200px){
+/* @media screen and (min-width: 1200px){
 
-}
+} */
+
