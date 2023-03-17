@@ -1,41 +1,216 @@
-@media screen and (min-width: 376px){
-  .container {
-      width: 346px;
+.container-header {
+  min-width: 375px;
+  padding: 0 20px;
+}
+
+.logo-header {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.77;
+  letter-spacing: -0.03em;
+}
+
+.simply-header {
+  font-style: italic;
+}
+
+.logo-header::after {
+  display: block;
+  content: '';
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/symbol-defs.svg#icon-logo_tab_mob);
+  background-repeat: no-repeat;
+}
+
+.burger-btn {
+  display: flex;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-color: var(--primary-white-color);
+  align-items: center;
+  padding: 0;
+
+}
+
+.header-bur {
+  stroke: var(--primary-text-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.menu-mobile {
+  position: fixed;
+  width: 220px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: var(--primary-text-color);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.menu-mobile.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+}
+
+.cross-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.header-x {
+  stroke: var(--primary-white-color);
+  width: 28px;
+  height: 28px;
+}
+
+.header-x:hover, .header-x:focus {
+  stroke: var(--secondary-text-color);
+}
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-white-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.87;
+  letter-spacing: -0.02em;
+  margin-top: 136px;
+
+}
+
+.nav-mobile .item-header {
+  padding-bottom: 24px;
+  padding-left: 50px;
+}
+
+.nav-mobile .item-header:hover,
+.nav-mobile .item-header:focus {
+  color: var(--secondary-accent-color);
+}
+
+.soc-net-mobile {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  gap: 18px;
+
+}
+
+.link-header-mobile .icon-header {
+  fill: transparent;
+  stroke: var(--primary-white-color);
+  width: 22px;
+  height: 22px;
+}
+
+.link-header-mobile:hover .icon-header,
+.link-header-mobile:focus .icon-header {
+  stroke: var(--secondary-accent-color);
+}
+
+.link-desktop .icon-header {
+  fill: transparent;
+  stroke: var(--primary-text-color);
+  width: 22px;
+  height: 22px;
+}
+
+.link-desktop:hover .icon-header,
+.link-desktop:focus .icon-header {
+  stroke: var(--secondary-accent-color);
+}
+
+.header-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+  .menu-mobile {
+    width: 290px;
   }
+.header-desktop {
+  display: none;
+}
+.header-x {
+  stroke: var(--primary-white-color);
+  width: 32px;
+  height: 32px;
+}
 }
 
-@media screen and (min-width: 768px){
-  .container {
-      width: 738px;
+@media screen and (min-width: 1200px) {
+  .burger-btn {
+    display: none;
   }
-}
 
-@media screen and (min-width: 1200px){
-  .container {
-      width: 1160px;
+  .header-desktop {
+    display: block;
+    display: flex;
+    gap: 137px;
   }
-}
 
-/* MOBILE-MENU-0-767px */
-@media screen and (max-width: 375px){
+  .soc-desktop-header {
+    display: flex;
+    gap: 19px;
+  }
 
-}
-@media screen and (min-width: 376px){
+  .nav-desktop-header {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0.87;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: var(--primary-text-color);
+  }
 
-}
-@media screen and (max-width: 767px){
+  .logo-header {
+    font-size: 18px;
+    line-height: 0.9;
+  }
 
-}
+  .logo-header::after {
+    background-image: url(../img/symbol-defs.svg#icon-logo_pc);
+    width: 24px;
+    height: 24px;
+  }
 
-/* TABLET-768-1200px */
-@media screen and (min-width: 768px){
 
-}
-@media screen and (max-width: 1199px){
+  .nav-desktop-header .item-header:hover,
+  .nav-desktop-header .item-header:focus {
+    color: var(--secondary-accent-color);
+  }
 
-}
-
-/* PC-1200px-8 */
-@media screen and (min-width: 1200px){
+  .icon-header {
+    fill: transparent;
+    stroke: var(--primary-text-color);
+  }
 
 }
