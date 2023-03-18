@@ -17,13 +17,12 @@
   font-style: italic;
 }
 
-.logo-header::after {
-  display: block;
-  content: '';
+.header-logo {
+  stroke: #FD9222;
+  fill: #FCF1E0 ;
   width: 21px;
   height: 21px;
-  background-image: url(../img/symbol-defs.svg#icon-logo_tab_mob);
-  background-repeat: no-repeat;
+
 }
 
 .burger-btn {
@@ -81,6 +80,7 @@
   width: 28px;
   height: 28px;
   border: none;
+  align-items: center;
   background-color: transparent;
   padding: 0;
   margin-top: 20px;
@@ -93,6 +93,13 @@
   width: 28px;
   height: 28px;
 }
+ 
+.cross-btn:focus .header-x, .cross-btn:hover .header-x {
+stroke: var(--secondary-accent-color);
+}
+.desk-header:focus {
+   color: var(--secondary-accent-color);
+ }
 
 .header-x:hover, .header-x:focus {
   stroke: var(--secondary-text-color);
@@ -177,10 +184,16 @@
     display: none;
   }
 
+    .header-logo {
+      
+      width: 24px;
+      height: 24px;
+  
+    }
   .header-desktop {
-    display: block;
     display: flex;
     gap: 137px;
+    align-items: center;
   }
 
   .soc-desktop-header {
@@ -212,7 +225,7 @@
 
 
   .nav-desktop-header .item-header:hover,
-  .nav-desktop-header .item-header:focus {
+  .desk-header:focus {
     color: var(--secondary-accent-color);
   }
 
