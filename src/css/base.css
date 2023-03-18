@@ -14,10 +14,12 @@
   /* COLOR */
   --primary-text-color:#111111;
   --secondary-text-color:#FD9222;
+  --third-text-color:rgba(255, 255, 255, 0.7);
   --accent-color:#1E1823;
   --secondary-accent-color:#FD9222;
   --secondary-color-btn:#FCF1E0;
   --primary-white-color: #ffffff;
+  --border-icons-line:rgba(255, 255, 255, 0.5);
   --bg-primary-color:#FAFAFA;
   --backdrop: rgba(46, 47, 66, 0.4);
   --bg-grad-footer:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
