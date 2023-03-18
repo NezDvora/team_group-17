@@ -17,13 +17,12 @@
   font-style: italic;
 }
 
-.logo-header::after {
-  display: block;
-  content: '';
+.header-logo {
+  stroke: #FD9222;
+  fill: #FCF1E0 ;
   width: 21px;
   height: 21px;
-  background-image: url(../img/symbol-defs.svg#icon-logo_tab_mob);
-  background-repeat: no-repeat;
+
 }
 
 .burger-btn {
@@ -59,14 +58,20 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+
+  transform: translateX(300px);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-mobile.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  transform: translateX(0);
 
 }
+
 
 .cross-btn {
   position: absolute;
@@ -75,16 +80,26 @@
   width: 28px;
   height: 28px;
   border: none;
+  align-items: center;
   background-color: transparent;
   padding: 0;
   margin-top: 20px;
   margin-right: 20px;
+
 }
+
 .header-x {
   stroke: var(--primary-white-color);
   width: 28px;
   height: 28px;
 }
+ 
+.cross-btn:focus .header-x, .cross-btn:hover .header-x {
+stroke: var(--secondary-accent-color);
+}
+.desk-header:focus {
+   color: var(--secondary-accent-color);
+ }
 
 .header-x:hover, .header-x:focus {
   stroke: var(--secondary-text-color);
@@ -169,10 +184,16 @@
     display: none;
   }
 
+    .header-logo {
+      
+      width: 24px;
+      height: 24px;
+  
+    }
   .header-desktop {
-    display: block;
     display: flex;
     gap: 137px;
+    align-items: center;
   }
 
   .soc-desktop-header {
@@ -204,7 +225,7 @@
 
 
   .nav-desktop-header .item-header:hover,
-  .nav-desktop-header .item-header:focus {
+  .desk-header:focus {
     color: var(--secondary-accent-color);
   }
 

@@ -6,23 +6,26 @@
 
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-    /* COLOR */
-    --primary-text-color:#111111;
-    --secondary-text-color:#FD9222;
-    --accent-color:#1E1823;
-    --secondary-accent-color:#FD9222;
-    --primary-white-color: #ffffff;
-    --bg-primary-color:#E2E2E2;
-    --backdrop: rgba(46, 47, 66, 0.4);
-    --bg-grad-footer:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-    --bg-grad-hero:linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%);
-    /* ANIMATIONS */
-    --function-duration: 350ms;
-    --function-timing: cubic-bezier(0.4, 0, 0.2, 1);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  /* COLOR */
+  --primary-text-color:#111111;
+  --secondary-text-color:#FD9222;
+  --third-text-color:rgba(255, 255, 255, 0.7);
+  --accent-color:#1E1823;
+  --secondary-accent-color:#FD9222;
+  --secondary-color-btn:#FCF1E0;
+  --primary-white-color: #ffffff;
+  --border-icons-line:rgba(255, 255, 255, 0.5);
+  --bg-primary-color:#FAFAFA;
+  --backdrop: rgba(46, 47, 66, 0.4);
+  --bg-grad-footer:linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  --bg-grad-hero:linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%);
+  /* ANIMATIONS */
+  --function-duration: 350ms;
+  --function-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
