@@ -1,4 +1,5 @@
 .products {
+  margin-top: 128px;
   background-color: var(--bg-primary-color);
 }
 .products-container {
@@ -73,6 +74,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
+  cursor: none;
   color: var(--primary-text-color);
 
   background: #fafafa;
