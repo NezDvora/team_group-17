@@ -1,18 +1,18 @@
 @media screen and (min-width: 376px){
   .container {
-      width: 346px;
+      width: 365px;
   }
 }
 
 @media screen and (min-width: 768px){
   .container {
-      width: 738px;
+      width: 734px;
   }
 }
 
 @media screen and (min-width: 1200px){
   .container {
-      width: 1160px;
+      width: 1166px;
   }
 }
 

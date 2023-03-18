@@ -21,3 +21,34 @@
 @import url('./modal-review.css');
 @import url('./modal-thank-feedback.css');
 @import url('./modal-subscribe.css');
+
+@font-face {
+  font-family:"Montserrat";
+  src: url(/src/fonts/Montserrat-Medium.woff2),
+  url(/src/fonts/Montserrat-Medium.woff);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+
+  font-family:"Montserrat";
+  src: url(/src/fonts/Montserrat-Regular.woff2),
+  url(/src/fonts/Montserrat-Regular.woff);
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+
+  font-family:"Montserrat";
+  src: url(/src/fonts/Montserrat-SemiBold.woff2),
+  url(/src/fonts/Montserrat-SemiBold.woff);
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+}
