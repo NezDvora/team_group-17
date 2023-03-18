@@ -57,13 +57,11 @@
   display: flex;
   width: 100%;
   height: 100%;
-  border-radius: 15px;
 }
 
 .components-link-item-one {
   width: 100%;
   padding: 28px;
-  border-radius: 15px;
 }
 
 .components-list-img {
@@ -94,14 +92,12 @@
 
 .components-card-overlay {
   background-color: #ffffff;
-  border-radius: 15px;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   padding: 28px;
-  overflow-y: auto;
   transform: translateY(100%);
   opacity: 0;
   transition: transform cubic-bezier(0.42, 0, 0.58, 1) 250ms,
@@ -112,7 +108,12 @@
 .components-link:focus .components-card-overlay {
   transform: translateY(0);
   opacity: 1;
-  outline: none;
+}
+
+.components-text-container-overlay {
+  height: 146px;
+  overflow: auto;
+  margin-top: 15px;
 }
 
 .components-text-title-overlay {
@@ -127,16 +128,17 @@
   margin-bottom: 8px;
 }
 
-.components-btns {
+.components-btn-container {
+  display: flex;
   margin-bottom: 14px;
 }
 
 .components-btn-overlay-link {
+  display: flex;
   height: 24px;
   background-color: #fafafa;
   border: 1px solid #fd9222;
   border-radius: 35px;
-
   padding: 6px 16px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -171,22 +173,10 @@
     box-shadow cubic-bezier(0.42, 0, 0.58, 1) 250ms;
 }
 
-.orange-bg:hover {
-  background-color: transparent;
-  -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
-}
-
 .orange-border {
   border: 1px solid #fd9222;
   transition: border-color cubic-bezier(0.42, 0, 0.58, 1) 250ms,
     box-shadow cubic-bezier(0.42, 0, 0.58, 1) 250ms;
-}
-
-.orange-border:hover {
-  border-color: transparent;
-  -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
 }
 
 .nuts-bg {
@@ -195,8 +185,20 @@
     box-shadow cubic-bezier(0.42, 0, 0.58, 1) 250ms;
 }
 
+.orange-bg:hover,
+.orange-border:hover,
 .nuts-bg:hover {
   background-color: transparent;
+  border-color: transparent;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.orange-bg:focus-within,
+.orange-border:focus-within,
+.nuts-bg:focus-within {
+  background-color: transparent;
+  border-color: transparent;
   -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.1);
 }
