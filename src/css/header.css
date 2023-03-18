@@ -85,7 +85,9 @@
   padding: 0;
   margin-top: 20px;
   margin-right: 20px;
+
 }
+
 .header-x {
   stroke: var(--primary-white-color);
   width: 28px;
