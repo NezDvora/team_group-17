@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    border: 1px solid #000000;
+    border: solid #000000;
     border-radius: 30px;
     margin: 14px 20px 0 20px;
     padding-top: 395px;
@@ -57,10 +57,18 @@
     width: 120px;
 }
 
+.btn-i-hero:hover, .btn-i-hero:focus {
+    background-color: #FCF1E0;
+    color: var(--secondary-text-color);
+}
 .btn-ii-hero {
     background-color: transparent;
     border: 1px solid #FFFFFF;
     width: 159px;
+}
+.btn-ii-hero:hover, .btn-ii-hero:focus {
+    border: 1px solid var(--secondary-text-color);
+    color: var(--secondary-text-color);
 }
 
 .hero-scroll {
