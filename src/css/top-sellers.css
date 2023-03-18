@@ -16,7 +16,6 @@ img {
 
 .title-color {
   color: var(--secondary-accent-color);
-}
 
 .top-sellers-item:last-child {
   display: none;
