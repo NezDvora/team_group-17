@@ -66,7 +66,7 @@
     border: 1px solid #FFFFFF;
     width: 159px;
 }
-.btn-ii-hero:hover, .btn-ii-hero:focus {
+.btn-ii-hero:hover, .btn-ii-hero-a:focus .btn-ii-hero {
     border: 1px solid var(--secondary-text-color);
     color: var(--secondary-text-color);
 }
@@ -77,6 +77,14 @@
     padding-left: px;
     padding-top: 32px;
     align-items: center;
+    fill: #FD9222;
+}
+.hero-scroll:hover .hero-scroll-text, .hero-scroll:focus .hero-scroll-text  {
+    color: var(--secondary-text-color);
+}
+.hero-scroll:hover .btn-check-hero, .hero-scroll:focus .btn-check-hero {
+    background-color:#FD9222;
+    fill: #ffffff;
 }
 
 .hero-scroll-text {
