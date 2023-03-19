@@ -25,6 +25,9 @@
   justify-content: center;
   align-items: center;
 }
+.advantages-svg {
+  fill: var(--secondary-text-color);
+}
 .advantages-subtitle {
   margin-top: 22px;
   margin-bottom: 18px;
