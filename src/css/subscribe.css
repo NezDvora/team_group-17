@@ -1,7 +1,6 @@
 .subscribe {
   max-width: 1440px;
   height: auto;
-  /* background-color: var(--accent-color); */
   background-image: url(../img/images_mobile/bg-footer-mobile.jpg), var(--bg-grad-footer);
   background-repeat: no-repeat;
   background-position: center;
