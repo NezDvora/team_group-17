@@ -23,29 +23,29 @@
 @import url('./modal-subscribe.css');
 
 @font-face {
-  font-family:"Montserrat";
-  src: url(/src/fonts/Montserrat-Medium.woff2),
+  font-family: 'Montserrat', sans-serif;
+  src: url(/src/fonts/Montserrat-Medium.ttf),
   url(/src/fonts/Montserrat-Medium.woff);
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 
-  font-family:"Montserrat";
-  src: url(/src/fonts/Montserrat-Regular.woff2),
+  font-family: 'Montserrat', sans-serif;
+  src: url(/src/fonts/Montserrat-Regular.ttf),
   url(/src/fonts/Montserrat-Regular.woff);
   font-style: normal;
   font-weight: 500;
   font-display: swap;
 
-  font-family:"Montserrat";
-  src: url(/src/fonts/Montserrat-SemiBold.woff2),
+  font-family: 'Montserrat', sans-serif;
+  src: url(/src/fonts/Montserrat-SemiBold.ttf),
   url(/src/fonts/Montserrat-SemiBold.woff);
   font-style: normal;
   font-weight: 600;
   font-display: swap;
 }
 
-body {
+body, button, link, textarea, input {
   font-family: 'Montserrat', sans-serif;
 }
 

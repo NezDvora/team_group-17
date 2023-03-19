@@ -65,24 +65,6 @@ html {
   margin-right: auto;
 }
 
-/* @media screen and (min-width: 376px){
-  .container {
-      width: 365px;
-  }
-}
-
-@media screen and (min-width: 768px){
-  .container {
-      width: 734px;
-  }
-}
-
-@media screen and (min-width: 1200px){
-  .container {
-      width: 1166px;
-  }
-} */
-
 @media screen and (min-width: 376px){
   .container {
     max-width: 100%;

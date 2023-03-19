@@ -1,11 +1,8 @@
 :root {
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  /* FONTS */
+  --regular: font-weight:400;
+  --medium: font-weight:500;
+  --bold: font-weight:600;
   /* COLOR */
   --primary-text-color:#111111;
   --secondary-text-color:#FD9222;
@@ -23,4 +20,3 @@
   --function-duration: 350ms;
   --function-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
