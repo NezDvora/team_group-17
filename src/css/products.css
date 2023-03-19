@@ -1,5 +1,5 @@
 .products {
-  margin-top: 128px;
+  padding-top: 128px;
   background-color: var(--bg-primary-color);
 }
 .products-container {
@@ -10,7 +10,7 @@
 }
 .products-title {
   margin: 0 auto;
-  font-weight: 600;
+  font-weight: var(--bold);
   font-size: 24px;
   line-height: 1.2;
   text-align: center;
@@ -52,7 +52,7 @@
   text-align: center;
 }
 .products-subtitle {
-  font-weight: 600;
+  font-weight: var(--bold);
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: -0.02em;
@@ -71,10 +71,10 @@
 .products-btn {
   margin: 0 auto 32px;
   padding: 8px 20px;
-  font-weight: 600;
+  font-weight: var(--bold);
   font-size: 14px;
   line-height: 1.21;
-  cursor: none;
+  cursor: default;
   color: var(--primary-text-color);
 
   background: #fafafa;
@@ -135,7 +135,29 @@
   transition-timing-function: var(--function-timing);
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (max-width: 375px) {
+  .products {
+    padding-top: 72px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .products-list {
+    margin-top: 32px;
+    gap: 20px;
+  }
+  .products-item {
+  }
+  .slick-track {
+    gap: 45px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .products {
+    padding-top: 72px;
+  }
   .products-container {
     width: 365px;
   }
