@@ -33,9 +33,7 @@
   color: #111111;
   margin-bottom: 32px;
 }
-.components-list {
-  max-width: 335px;
-}
+
 .components-list-item {
   width: 335px;
   height: 270px;
@@ -203,6 +201,15 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+  }
+  .components-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px 32px;
+  }
+  .components-list-item:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
