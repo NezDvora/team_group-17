@@ -35,7 +35,7 @@
 }
 
 .components-list-item {
-  width: 335px;
+  /* width: 335px; */
   height: 270px;
   border-radius: 15px;
   position: relative;
@@ -97,6 +97,7 @@
   height: 146px;
   overflow: auto;
   margin-top: 15px;
+  padding-right: 10px;
 }
 .components-text-title-overlay {
   font-family: 'Montserrat';
