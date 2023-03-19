@@ -21,7 +21,7 @@
   --function-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Montserrat', sans-serif;
   src: url(/src/fonts/Montserrat-Medium.ttf);
   font-style: normal;
@@ -47,4 +47,4 @@ body, button, link, textarea, input {
 
 h1 {
   font-weight: 400;
-}
+} */
