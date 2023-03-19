@@ -35,7 +35,6 @@
 }
 
 .components-list-item {
-  /* width: 335px; */
   height: 270px;
   border-radius: 15px;
   position: relative;
@@ -219,6 +218,9 @@
     justify-content: center;
     gap: 32px 32px;
   }
+  .components-list-item {
+    width: 336px;
+  }
 
   .components-order-two {
     order: 1;
@@ -234,5 +236,20 @@
 @media screen and (min-width: 1200px) {
   .components {
     max-width: 1200px;
+  }
+  .components-order-two {
+    order: 0;
+  }
+  .components-order-three {
+    order: 0;
+  }
+  .components-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 19px;
+  }
+  .components-list-img {
+    width: 206px;
+    height: 160px;
   }
 }
