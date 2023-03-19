@@ -1,150 +1,41 @@
-img {
-  border-radius: 15px;
-  margin-bottom: 20px;
-  margin-top: 32px;
-}
-
-.top-sellers-title {
-  text-align: center;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
-}
-
-.title-color {
-  color: var(--secondary-accent-color);
-
-.top-sellers-item:last-child {
-  display: none;
-}
-
-.top-sellers-text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-  color: var(--primary-text-color);
-}
-
-.top-sellers-paragraph {
-  display: none;
-}
-
-.top-sellers-btn {
-  margin: 0 auto;
-  display: block;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.2;
-  color: var(--primary-white-color);
-  width: 120px;
-  height: 41px;
-  border: 1px solid var(--secondary-accent-color);
-  background: var(--secondary-accent-color);
-  border-radius: 100px;
-}
-
-
 @media screen and (min-width: 376px){
-    .container {
-        width: 346px;
-    }
+  .container {
+      width: 365px;
   }
-  
-  @media screen and (min-width: 768px){
-    .container {
-        width: 738px;
-    }
-  }
-  
-  @media screen and (min-width: 1200px){
-    .container {
-        width: 1160px;
-    }
-  }
-  
-  /* MOBILE-MENU-0-767px */
-  @media screen and (max-width: 375px){
-  
-  }
-  @media screen and (min-width: 376px){
-  
-  }
-  @media screen and (max-width: 767px){
-  
-  }
-  
-  /* TABLET-768-1200px */
-  @media screen and (min-width: 768px) {
-    img {
-      margin-top: 50px;
-      margin-bottom: 32px;
-    }
-    .top-sellers-title {
-      font-size: 24px;
-      line-height: 1.17;
-    }
-    
-    .top-sellers-list {
-      display: flex;
-    }
-    
-    .top-sellers-item:not(:first-child) {
-      margin-left: 16px;
-    }
-    
-    .top-sellers-text {
-      display: none;
-    }
-    
-    .top-sellers-paragraph {
-      display: block;
-      max-width: 306px;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 1.29;
-      letter-spacing: -0.02em;
-      color: var(--primary-text-color);
-    }
-    
-    .top-sellers-div {
-      display: flex;
-    }
-    
-    .top-sellers-btn {
-      margin-right: 0px;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 1.2;
-      color: var(--primary-white-color);
-      width: 162px;
-      height: 50px;
-      border: 1px solid var(--secondary-accent-color);
-      background: var(--secondary-accent-color);border-radius: 100px;
-    }
-  }
+}
 
-  @media screen and (max-width: 1199px){
-  
+@media screen and (min-width: 768px){
+  .container {
+      width: 734px;
   }
-  
-  /* PC-1200px-8 */
-  @media screen and (min-width: 1200px){
-    .top-sellers-item:last-child {
-      display: block;
-    }
-    .top-sellers-paragraph {
-      max-width: 407px;
-    }
+}
+
+@media screen and (min-width: 1200px){
+  .container {
+      width: 1166px;
+  }
+}
+
+/* MOBILE-MENU-0-767px */
+@media screen and (max-width: 375px){
+
+}
+@media screen and (min-width: 376px){
+
+}
+@media screen and (max-width: 767px){
+
+}
+
+/* TABLET-768-1200px */
+@media screen and (min-width: 768px){
+
+}
+@media screen and (max-width: 1199px){
+
+}
+
+/* PC-1200px-8 */
+@media screen and (min-width: 1200px){
+
 }
