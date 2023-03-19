@@ -189,14 +189,20 @@
     max-width: 768px;
     padding-right: 32px;
     padding-left: 32px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   .components-title {
-    max-width: 360px;
+    max-width: 430px;
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 28px;
   }
   .components-text {
     width: 390px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
