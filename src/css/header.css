@@ -59,9 +59,9 @@
   visibility: hidden;
   pointer-events: none;
 
-  transform: translateX(300px);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(100%);
+  transition: opacity var(--function-duration) var(--function-timing),
+    transform var(--function-duration) var(--function-timing);
 }
 
 .menu-mobile.is-open {
@@ -71,6 +71,7 @@
   transform: translateX(0);
 
 }
+
 
 .cross-btn {
   position: absolute;
@@ -232,7 +233,7 @@
   }
 
   .logo-header::after {
-    background-image: url(../img/symbol-defs.svg#icon-logo_pc);
+    background-image: url(/img/symbol-defs.svg#icon-logo_pc);
     width: 24px;
     height: 24px;
   }
