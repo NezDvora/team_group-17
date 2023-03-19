@@ -1,6 +1,6 @@
 .how-its-made {
   border-color: var(--bg-primary-color);
-  margin-bottom: 72px;
+  padding-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -103,7 +103,7 @@ margin-bottom: 18px;
 
   .how-its-made {
       border-color: var(--bg-primary-color);
-      margin-bottom: 100px;
+      padding-bottom: 100px;
   }
   .how-its-made-title {
       font-size: 24px;
@@ -133,7 +133,7 @@ margin-bottom: 18px;
   }
 
   .how-its-made {
-    margin-bottom: 129px;
+    padding-bottom: 129px;
   }
 
   .how-its-made-list-wrap {
