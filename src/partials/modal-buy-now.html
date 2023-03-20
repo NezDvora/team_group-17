@@ -94,7 +94,7 @@
             </div>
           </li>
         </ul>
-        <form class="buy-now-modal-form" method="get">
+        <form class="buy-now-modal-form" id="buy-now-form">
           <div class="buy-now-modal-field">
             <label class="buy-now-input-lable">Personal information</label>
             <div class="buy-now-input-wrap person">
@@ -143,7 +143,7 @@
                 required
               />
               <svg class="modal-tel-icon">
-                <use href="../img/symbol-defs.svg#icon-flag"></use>
+                <use href="/img/symbol-defs.svg#icon-flag"></use>
               </svg>
             </div>
           </div>
@@ -160,7 +160,7 @@
                 required
               />
               <svg class="modal-card-icon">
-                <use href="../img/symbol-defs.svg#icon-mastercard"></use>
+                <use href="/img/symbol-defs.svg#icon-mastercard"></use>
               </svg>
             </div>
           </div>
@@ -178,7 +178,13 @@
         </form>
       </div>
       <div class="buy-now-modal-btn-wrap">
-        <button class="buy-now-modal-send-btn btn" type="submit">Submit</button>
+        <button
+          class="buy-now-modal-send-btn btn"
+          type="submit"
+          form="buy-now-form"
+        >
+          Submit
+        </button>
       </div>
     </div>
   </div>

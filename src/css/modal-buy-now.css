@@ -37,7 +37,7 @@ input {
   background-color: var(--bg-primary-color);
   border-radius: 15px;
   transition: var(--function-duration) var(--function-timing);
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scaleY(1);
 }
 
 .backdrop.is-hidden .buy-now-modal {
