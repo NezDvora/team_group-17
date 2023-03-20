@@ -1,6 +1,6 @@
 .container-header {
-  min-width: 375px;
-  padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo-header {
@@ -45,23 +45,24 @@
   justify-content: space-between;
   width: 100%;
   padding-top: 20px;
+  padding-right: 32px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .menu-mobile {
   position: fixed;
-  width: 220px;
+  width: 200px;
   height: 100%;
   top: 0;
   right: 0;
   z-index: 10;
   background-color: var(--primary-text-color);
+  transition: var(--function-timing), var(--function-duration);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
-  transform: translateX(100%);
-  transition: opacity var(--function-duration) var(--function-timing),
-    transform var(--function-duration) var(--function-timing);
+  transform: translate(100%);
 }
 
 .menu-mobile.is-open {
@@ -171,6 +172,11 @@
   display: none;
 }
 
+@media screen and (min-width: 376px) {
+  .menu-mobile {
+      width: 220px;
+    }
+}
 @media screen and (min-width: 768px) {
 .header-desktop-vew {
   display: none;
@@ -188,15 +194,26 @@
     width: 32px;
     height: 32px;
   }
+  .header {
+    margin-left: 32px;
+    margin-right: 32px;
+    padding-right: 60px
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .header {
+    padding-right: 0;
+  }
 
   .header-desktop-vew {
       display: flex;
       display: flex;
         gap: 137px;
         align-items: center;
+        margin-left: 32px;
+        margin-right: 32px;
+          padding-right: 32px;
     }
 
   .burger-btn {
