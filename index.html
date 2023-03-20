@@ -21,7 +21,7 @@
     />
     
     <script type="module" crossorigin src="/team_group-17/assets/index-538b6172.js"></script>
-    <link rel="stylesheet" href="/team_group-17/assets/index-f94c9d58.css">
+    <link rel="stylesheet" href="/team_group-17/assets/index-67f0d78a.css">
   </head>
 
   <body>
@@ -727,7 +727,7 @@
             </div>
           </li>
         </ul>
-        <form class="buy-now-modal-form" method="get">
+        <form class="buy-now-modal-form" id="buy-now-form">
           <div class="buy-now-modal-field">
             <label class="buy-now-input-lable">Personal information</label>
             <div class="buy-now-input-wrap person">
@@ -776,7 +776,7 @@
                 required
               />
               <svg class="modal-tel-icon">
-                <use href="../img/symbol-defs.svg#icon-flag"></use>
+                <use href="/team_group-17/assets/symbol-defs-756dcc9f.svg#icon-flag"></use>
               </svg>
             </div>
           </div>
@@ -793,7 +793,7 @@
                 required
               />
               <svg class="modal-card-icon">
-                <use href="../img/symbol-defs.svg#icon-mastercard"></use>
+                <use href="/team_group-17/assets/symbol-defs-756dcc9f.svg#icon-mastercard"></use>
               </svg>
             </div>
           </div>
@@ -811,7 +811,13 @@
         </form>
       </div>
       <div class="buy-now-modal-btn-wrap">
-        <button class="buy-now-modal-send-btn btn" type="submit">Submit</button>
+        <button
+          class="buy-now-modal-send-btn btn"
+          type="submit"
+          form="buy-now-form"
+        >
+          Submit
+        </button>
       </div>
     </div>
   </div>
@@ -851,7 +857,39 @@
   </div>
 </div>
 
-      
+      <section data-modal class="backdrop is-hidden">
+  <div class="modal-subscribe">
+    <div class="modal-subscribe-img-mob">
+      <button data-modal-close class="modal-subscribe-btn-x">
+        <svg class="modal-subscribe-icon-cross">
+          <use href="/team_group-17/assets/symbol-defs-756dcc9f.svg#icon-x-close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="modal-subscribe-form">
+      <p class="modal-subscribe-title">
+        Explore our <br /><span class="modal-subscribe-akcent"
+          >new chocolate</span
+        >
+        first!
+      </p>
+      <div class="modal-subscribe-form-wrap">
+        <form class="modal-subscribe-input" id="modal-subscribe-form">
+          <input
+            type="email"
+            name="mailto"
+            id="mailto"
+            placeholder="Enter your email"
+          />
+          <button class="modal-btn" form="modal-subscribe-form">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
     <footer>
       <footer class="footer" id="footer">
