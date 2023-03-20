@@ -1,7 +1,11 @@
 .advantages {
+  margin-right: auto;
+  margin-left: auto;
   background-color: var(--accent-color);
 }
 .advantages-container {
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 29px;
   padding-right: 20px;
   padding-bottom: 36px;
