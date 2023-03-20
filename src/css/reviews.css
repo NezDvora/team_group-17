@@ -1,6 +1,24 @@
 .reviews {
-  padding: 72px 32px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   background-color: var(--bg-primary-color);
+}
+.reviews-container {
+  width: 100%;
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.reviews-title {
+  margin-bottom: 32px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--primary-text-color);
 }
 
 .reviews-logo {
@@ -10,33 +28,40 @@
 .reviews-list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 94px;
+  margin-bottom: 32px;
   min-width: 0;
   padding-inline-start: 0;
 }
 
 .reviews-item {
   position: relative;
+  align-items: center;
+  max-width: 335px;
 }
 
-.reviews-title {
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-  margin-bottom: 74px;
+.reviews-item-slider {
+  width: 280px;
+  height: 242px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews-img {
   position: absolute;
-  top: -20%;
-  left: 40%;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 50%;
+  z-index: 10;
 }
 
 .reviews-text {
-  width: 315px;
+  width: 280px;
   height: 200px;
   background-color: var(--primary-white-color);
+  margin-top: 40px;
   padding-left: 24px;
   padding-right: 24px;
   display: flex;
@@ -50,6 +75,7 @@
 }
 
 .reviews-name {
+  padding-top: 18px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
@@ -65,7 +91,7 @@
   color: rgba(17, 17, 17, 0.7);
 }
 
-.reviews-button {
+.revies-button {
   display: block;
   width: 222px;
   height: 50px;
@@ -82,7 +108,7 @@
     color var(--function-duration) var(--function-timing);
 }
 
-.reviews-button:is(:hover, :focus) {
+.revies-button:is(:hover, :focus) {
   background-color: var(--secondary-text-color);
   color: var(--primary-white-color);
 }
@@ -90,15 +116,13 @@
 /* =================== Slider ============================ */
 
 .reviews-list .slick-list {
-  overflow: unset;
-  width: 100%;
+  overflow: hidden;
+  height: 242px;
 }
 
-.reviews-list .slick-track {
+.slick-track {
   display: flex;
   gap: 28px;
-  align-items: flex-start;
-  padding-inline-start: 0;
 }
 
 .reviews-list {
@@ -139,13 +163,14 @@
   background-color: rgba(17, 17, 17, 0.1);
   border-radius: 50%;
   border: 0;
+  cursor: pointer;
 }
 
 .reviews-list .slick-dots li.slick-active button {
   width: 28px;
   height: 13px;
   background-color: var(--secondary-text-color);
-  border-radius: 10px;
+  border-radius: 7px;
   border: 0;
   transition-property: width, background-color, border-radius;
   transition-duration: var(--function-duration);
@@ -158,51 +183,36 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-
-  .reviews-list {
-    margin-bottom: 32px;
-  }
-
   .reviews-text {
     width: 335px;
   }
-
-  .reviews-button {
-    width: 165px;
-    height: 41px;
-    font-size: 14px;
-    line-height: 1.21;
+  .reviews-item-slider {
+    width: 335px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .reviews {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
   .container {
     width: 768px;
     padding-right: 32px;
     padding-left: 32px;
   }
 
-  .reviews-list {
-    margin-bottom: 50px;
+  .reviews-container {
+    width: 100%;
+    max-width: 768px;
+  }
+
+  .reviews {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .reviews-text {
     width: 344px;
   }
-
-  .reviews-title {
-    margin-bottom: 91px;
-  }
-
-  .reviews-button {
-    width: 222px;
-    height: 50px;
-    font-size: 18px;
-    line-height: 1.22;
+  .reviews-item-slider {
+    width: 344px;
   }
 }
 
@@ -211,12 +221,27 @@
     padding-top: 128px;
     padding-bottom: 128px;
   }
+
   .container {
     width: 1200px;
     padding-right: 32px;
     padding-left: 32px;
   }
-  .reviews-text {
+
+  .reviews-container {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  /* .reviews-text {
     width: 360px;
+  } */
+
+  .reviews-item-slider {
+    width: 360px;
+  }
+
+  .slick-track {
+    gap: 56px;
   }
 }
