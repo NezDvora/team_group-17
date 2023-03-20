@@ -64,6 +64,7 @@
     border: none;
     width: 100px;
     transition: var(--function-timing), var(--function-duration);
+    cursor: pointer;
 }
 
 .btn-i-hero:hover,
