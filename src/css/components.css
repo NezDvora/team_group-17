@@ -178,16 +178,20 @@
 
 @media screen and (max-width: 374px) {
   .components {
-    padding-right: 20px;
-    padding-left: 20px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .components-container {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
 @media screen and (min-width: 375px) {
   .components {
     max-width: 375px;
+  }
+  .components-container {
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -195,10 +199,12 @@
 @media screen and (min-width: 768px) {
   .components {
     max-width: 768px;
-    padding-right: 32px;
-    padding-left: 32px;
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+  .components-container {
+    padding-right: 32px;
+    padding-left: 32px;
   }
   .components-title {
     max-width: 430px;
