@@ -1,24 +1,24 @@
 
 .container-header {
-    min-width: 375px;
-    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
-
-
 .hero {
-    background-image: url(../img/./images_mobile/bg-hero-mobile.jpg);
+    background-image: url(/img/./images_mobile/bg-hero-mobile.jpg);
     background-size: auto;
     height: 620px;
-    min-width: 335px;
+    
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    border: solid #000000;
+    border: 0px solid #000000;
     border-radius: 30px;
-    margin: 14px 20px 0 20px;
+    margin: 14px 20px 72px 20px;
     padding-top: 395px;
+    
+    padding-left: 20px;
+    
 }
 
 .hero-text {
@@ -30,6 +30,7 @@
     letter-spacing: -0.03em;
     color: #FFFFFF;
     padding-bottom: 32px;
+    padding-left: 20px;
     width: 290px;
     margin: 0;
 }
@@ -38,7 +39,9 @@
     display: flex;
     gap: 14px;
 }
-
+.hero-btn-tablet {
+    padding-left: 20px;
+}
 .btn-hero {
     display: flex;
     font-weight: 600;
@@ -57,16 +60,20 @@
     width: 120px;
 }
 
-.btn-i-hero:hover, .btn-i-hero:focus {
+.btn-i-hero:hover,
+.btn-i-hero:focus {
     background-color: #FCF1E0;
     color: var(--secondary-text-color);
 }
+
 .btn-ii-hero {
     background-color: transparent;
     border: 1px solid #FFFFFF;
     width: 159px;
 }
-.btn-ii-hero:hover, .btn-ii-hero:focus {
+
+.btn-ii-hero:hover,
+.btn-ii-hero-a:focus .btn-ii-hero {
     border: 1px solid var(--secondary-text-color);
     color: var(--secondary-text-color);
 }
@@ -77,6 +84,18 @@
     padding-left: px;
     padding-top: 32px;
     align-items: center;
+    fill: #FD9222;
+}
+
+.hero-scroll:hover .hero-scroll-text,
+.hero-scroll:focus .hero-scroll-text {
+    color: var(--secondary-text-color);
+}
+
+.hero-scroll:hover .btn-check-hero,
+.hero-scroll:focus .btn-check-hero {
+    background-color: #FD9222;
+    fill: #ffffff;
 }
 
 .hero-scroll-text {
@@ -110,17 +129,21 @@
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero {
-        background-image: url(../img/./images_mobile/bg-hero-mobile@2x.jpg);
+        background-image: url(/img/./images_mobile/bg-hero-mobile@2x.jpg);
+        
     }
 }
 
 @media screen and (min-width: 768px) {
     .hero {
-        background-image: url(../img/./images_tablet/bg-hero-tablet.jpg);
+        background-image: url(/img/./images_tablet/bg-hero-tablet.jpg);
         height: 890px;
-        min-width: px;
+    
         margin-top: 24px;
         padding-top: 671px;
+        margin-bottom: 50px;
+        margin-left: 32px;
+        margin-right: 32px;
     }
 
     .hero-text {
@@ -134,7 +157,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         justify-content: space-between;
         padding-right: 20px;
     }
-
 
     .hero-scroll-text {
         width: 78px;
@@ -150,24 +172,24 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         width: 290px;
     }
 
-
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
-        background-image: url(../img/./images_tablet/bg-hero-tablet@2x.jpg);
+        background-image: url(/img/./images_tablet/bg-hero-tablet@2x.jpg);
     }
 }
 
 @media screen and (min-width: 1200px) {
 
     .hero {
-        background-image: url(../img/bg-hero-pc.jpg);
+        background-image: url(/img/bg-hero-pc.jpg);
         height: 600px;
         margin-top: 32px;
         padding-top: 381px;
+        margin-bottom: 72px;
     }
 
     .hero-text {
@@ -181,6 +203,6 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .hero {
-        background-image: url(../img/bg-hero-pc@2x.jpg);
+        background-image: url(/img/bg-hero-pc@2x.jpg);
     }
 }

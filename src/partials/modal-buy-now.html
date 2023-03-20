@@ -1,28 +1,111 @@
 <section class="container backdrop-contaier">
-  <div class="backdrop" data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="buy-now-modal">
       <button type="button" class="buy-now-modal-close-btn" data-modal-close>
-        <svg class="buy-now-modal-close-icon" width="24" height="24">
-          <use href="../img/symbol-defs.svg#icon-x-close"></use>
+        <svg class="buy-now-modal-close-icon">
+          <use href="/img/symbol-defs.svg#icon-x-close"></use>
         </svg>
       </button>
       <p class="buy-now-modal-title"><span>buy</span> now</p>
       <div class="buy-now-modal-wrap">
-        <form class="buy-now-modal-form">
-          <ul class="buy-now-product-list list">
-            <li class="buy-now-product-item"></li>
-            <li class="buy-now-product-item"></li>
-            <li class="buy-now-product-item"></li>
-          </ul>
+        <ul class="buy-now-product-list list">
+          <li class="buy-now-product-item">
+            <div class="buy-now-product-card">
+              <picture class="buy-now-product-card-picture">
+                <source
+                  srcset="
+                    /img/images_mobile/order-choco-mobile.jpg    1x,
+                    /img/images_mobile/order-choco-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="/img/order-choco.jpg 1x, /img/order-choco@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="/img/images_mobile/order-choco-mobile@2x.jpg"
+                  alt="dark chocolate"
+                />
+              </picture>
+              <button class="buy-now-product-card-btn" type="button">
+                100 g
+              </button>
+            </div>
+          </li>
+          <li class="buy-now-product-item">
+            <div class="buy-now-product-card">
+              <picture class="buy-now-product-card-picture">
+                <source
+                  srcset="
+                    /img/images_mobile/order-chocolate-ba-mobile.jpg    1x,
+                    /img/images_mobile/order-chocolate-ba-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    /img/order-chocolate-ba.jpg     1x,
+                    /img/order-chocolate-bar@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="/img/images_mobile/order-chocolate-ba-mobile@2x.jpg"
+                  alt="chocolate bar"
+                />
+              </picture>
+              <button class="buy-now-product-card-btn" type="button">
+                200 g
+              </button>
+            </div>
+          </li>
+          <li class="buy-now-product-item">
+            <div class="buy-now-product-card">
+              <picture class="buy-now-product-card-picture">
+                <source
+                  srcset="
+                    /img/images_mobile/order-chocolate-bonbon-mobile.jpg    1x,
+                    /img/images_mobile/order-chocolate-bonbon-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    /img/order-chocolate-bonbon.jpg    1x,
+                    /img/order-chocolate-bonbon@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="/img/images_mobile/order-chocolate-bonbon-mobile@2x.jpg"
+                  alt="chocolate bonbon"
+                />
+              </picture>
+              <button class="buy-now-product-card-btn" type="button">
+                300 g
+              </button>
+            </div>
+          </li>
+        </ul>
+        <form class="buy-now-modal-form" method="get">
           <div class="buy-now-modal-field">
             <label class="buy-now-input-lable">Personal information</label>
-            <div class="buy-now-input-wrap">
+            <div class="buy-now-input-wrap person">
               <input
                 type="text"
                 class="buy-now-modal-input"
                 name="modal-name"
                 pattern="[A-Za-z'-]{1,50}$"
                 placeholder="Name"
+                autofocus
+                required
               />
               <input
                 type="text"
@@ -49,12 +132,19 @@
             <label class="buy-now-input-lable">Phone number</label>
             <div class="buy-now-input-wrap">
               <input
+                id="phone"
                 type="tel"
-                class="buy-now-modal-input"
+                class="buy-now-modal-input tel"
                 name="modal-tel"
                 pattern="^\+?[0-9]{1,3}\s?[0-9]{3,4}\s?[0-9]{4,6}$"
+                value="+380"
+                size="13"
                 placeholder="Phone number"
+                required
               />
+              <svg class="modal-tel-icon">
+                <use href="../img/symbol-defs.svg#icon-flag"></use>
+              </svg>
             </div>
           </div>
           <div class="buy-now-modal-field">
@@ -65,8 +155,13 @@
                 class="buy-now-modal-input"
                 name="modal-card"
                 pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|6(?:011|5[0-9]{2})[0-9]{12}|(?:2131|1800|35\d{3})\d{11})$"
+                size="16"
                 placeholder="Enter card"
+                required
               />
+              <svg class="modal-card-icon">
+                <use href="../img/symbol-defs.svg#icon-mastercard"></use>
+              </svg>
             </div>
           </div>
           <div class="buy-now-modal-field">
@@ -80,12 +175,10 @@
               placeholder="Enter text"
             ></textarea>
           </div>
-          <div class="buy-now-modal-btn-wrap">
-            <button class="buy-now-modal-send-btn btn" type="submit">
-              Submit
-            </button>
-          </div>
         </form>
+      </div>
+      <div class="buy-now-modal-btn-wrap">
+        <button class="buy-now-modal-send-btn btn" type="submit">Submit</button>
       </div>
     </div>
   </div>

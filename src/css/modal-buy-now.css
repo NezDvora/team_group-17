@@ -4,6 +4,15 @@
   pointer-events: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -25,7 +34,7 @@
   max-width: 311px;
   height: calc(100% - 30px);
   max-height: 621px;
-  background-color: #fafafa;
+  background-color: var(--bg-primary-color);
   border-radius: 15px;
   transition: var(--function-duration) var(--function-timing);
   transform: translate(-50%, -50%) scale(1);
@@ -46,6 +55,8 @@
 }
 
 .buy-now-modal-close-icon {
+  width: 24px;
+  height: 24px;
   stroke: var(--primary-text-color);
 }
 
@@ -65,20 +76,59 @@
   color: var(--secondary-text-color);
 }
 
-.buy-now-product-list {
+.buy-now-modal-wrap {
+  height: 436px;
+  overflow-y: auto;
 }
 
-.buy-now-modal {
-  height: calc(100% - 24px);
-  overflow-y: auto;
+.buy-now-product-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.buy-now-product-card {
+  width: 231px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background: var(--primary-white-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+
+.buy-now-product-card-wrap {
+  padding: 32px 32px 10px 32px;
+}
+
+.buy-now-product-card-picture {
+  margin: 32px 32px 0;
+}
+
+.buy-now-product-card-btn {
+  min-width: 96px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0 auto 28px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #111111;
+  background: var(--bg-primary-color);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
 }
 
 .buy-now-product-item {
 }
 
 .buy-now-modal-form {
-  padding-right: 14px;
-  padding-left: 14px;
+  margin-top: 32px;
+  padding-right: 10px;
+  padding-left: 10px;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -86,6 +136,7 @@
 
 .buy-now-modal-field {
 }
+
 .buy-now-input-lable {
   font-weight: 500;
   font-size: 12px;
@@ -93,10 +144,13 @@
   letter-spacing: -0.02em;
   color: #000;
 }
+
 .buy-now-input-wrap {
-}
-.buy-now-modal-input {
+  position: relative;
   margin-top: 8px;
+}
+
+.buy-now-modal-input {
   width: 100%;
   height: 45px;
   padding-right: 18px;
@@ -122,6 +176,24 @@
 
 .input-surname {
   margin-top: 14px;
+}
+
+.modal-tel-icon {
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translatey(-50%);
+}
+
+.modal-card-icon {
+  width: 21.94px;
+  height: 12.89px;
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translatey(-50%);
 }
 
 .buy-now-modal-message {
@@ -151,19 +223,27 @@
 
 input::placeholder,
 textarea::placeholder {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
 
-.buy-now-modal-btn-wrap {
+.tel {
+  padding-left: 50px;
 }
+
+.buy-now-modal-btn-wrap {
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
 .buy-now-modal-send-btn {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
-  color: #ffffff;
+  color: var(--primary-white-color);
   border-radius: 100px;
   background-color: var(--secondary-accent-color);
   min-width: 109px;
@@ -176,14 +256,101 @@ textarea::placeholder {
 
 .buy-now-modal-send-btn:hover,
 .buy-now-modal-send-btn:focus {
-  background-color: #fcf1e0;
+  background-color: var(--secondary-color-btn);
   color: var(--secondary-accent-color);
 }
 
 /* ----------------------------- */
 
 @media screen and (min-width: 375px) {
-  .container {
-    max-width: 335px;
+}
+
+@media screen and (min-width: 768px) {
+  .buy-now-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 24px;
+    width: calc(100% - 30px);
+    max-width: 609px;
+    height: calc(100% - 30px);
+    max-height: 621px;
+    background-color: var(--bg-primary-color);
+    border-radius: 15px;
+    transition: var(--function-duration) var(--function-timing);
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .buy-now-modal-close-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .buy-now-modal-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .buy-now-modal-wrap {
+    height: 426px;
+    overflow-y: auto;
+  }
+
+  .buy-now-product-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .buy-now-product-card {
+    width: 160px;
+  }
+
+  .buy-now-input-lable {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .buy-now-input-wrap.person {
+    display: flex;
+    gap: 21px;
+  }
+
+  .buy-now-modal-input {
+    height: 66px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .input-surname {
+    margin-top: 0;
+  }
+
+  .modal-tel-icon {
+    width: 32px;
+    height: 24px;
+    left: 24px;
+  }
+
+  .modal-card-icon {
+    width: 30.17px;
+    height: 18.41px;
+    right: 24px;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .tel {
+    padding-left: 74px;
+  }
+
+  .buy-now-modal-send-btn {
+    min-width: 133px;
+    height: 45px;
+    padding: 14px 40px;
   }
 }
