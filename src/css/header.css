@@ -51,10 +51,10 @@
 
 .menu-mobile {
   position: fixed;
-  width: 200px;
+  width: 170px;
   height: 100%;
   top: 0;
-  right: 2px;
+  right: 0;
   z-index: 10;
   background-color: var(--primary-text-color);
   transition: var(--function-timing), var(--function-duration);
@@ -69,7 +69,7 @@
   visibility: visible;
   pointer-events: auto;
   transform: translateX(0);
-
+  right: 0;
 }
 
 
@@ -84,7 +84,7 @@
   background-color: transparent;
   padding: 0;
   margin-top: 20px;
-  margin-right: 20px;
+  margin-right: 24px;
 
 }
 
@@ -92,6 +92,7 @@
   stroke: var(--primary-white-color);
   width: 28px;
   height: 28px;
+  transition: var(--function-timing), var(--function-duration);
 }
 
 .cross-btn:focus .header-x,
@@ -101,6 +102,10 @@
 
 .desk-header:focus {
   color: var(--secondary-accent-color);
+}
+
+.desk-header {
+  transition: var(--function-timing), var(--function-duration);
 }
 
 .header-x:hover,
@@ -140,6 +145,10 @@
 
 }
 
+.icon-header {
+  transition: var(--function-timing), var(--function-duration);
+}
+
 .link-header-mobile .icon-header {
   fill: transparent;
   stroke: var(--primary-white-color);
@@ -173,8 +182,8 @@
 
 @media screen and (min-width: 376px) {
   .menu-mobile {
-      width: 220px;
-      right: 4px;
+      width: 200px;
+      right: 0;
     }
 
 
@@ -204,8 +213,13 @@
     padding-left: 0;
     padding-right: 0;
   }
+  
   .header {
     padding: 0;
+  }
+
+  .cross-btn {
+    margin-right: 36px;
   }
 }
 

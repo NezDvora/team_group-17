@@ -63,6 +63,7 @@
     background: #FD9222;
     border: none;
     width: 100px;
+    transition: var(--function-timing), var(--function-duration);
 }
 
 .btn-i-hero:hover,
@@ -75,6 +76,7 @@
     background-color: transparent;
     border: 1px solid #FFFFFF;
     width: 135px;
+    transition: var(--function-timing), var(--function-duration);
 }
 
 .btn-ii-hero:hover,
@@ -112,6 +114,7 @@
     width: 67px;
     padding: 0;
     margin: 0;
+    transition: var(--function-timing), var(--function-duration);
 }
 
 .btn-check-hero {
@@ -121,7 +124,7 @@
     border: none;
     background-color: #ffffff;
     padding-top: 5px;
-
+    transition: var(--function-timing), var(--function-duration);
 }
 
 .header-desktop {
