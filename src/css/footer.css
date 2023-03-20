@@ -102,11 +102,15 @@
     stroke: currentColor;
 }
 
-.footer-social-link {}
-
-.footer-svg {
-    stroke: #ffffff;
+.footer-social-link {
+    diplay: flex;
+    width: 100%;
+    height: 100%;
+    color: var(--primary-white-color);
+    transition: color 250ms var(--function-timing);
 }
+
+.footer-svg {}
 
 .footer-bottom {}
 
@@ -127,16 +131,13 @@
     gap: 18px;
 }
 
-.footer-bottom-item {
-    
-
-}
+.footer-bottom-item {}
 
 .footer-bottom-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    
+
     align-items: center;
     letter-spacing: -0.02em;
     color: #ffffff;
@@ -148,8 +149,10 @@
     transition: color 250ms var(--function-timing);
 }
 
-.footer-svg:hover {
+.footer-svg:is(:hover, :focus),
+.footer-social-link:is(:hover, :focus) {
     stroke: var(--secondary-accent-color);
+    color: var(--secondary-accent-color);
     transition: stroke 250ms var(--function-timing);
 }
 
