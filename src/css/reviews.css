@@ -65,7 +65,7 @@
   color: rgba(17, 17, 17, 0.7);
 }
 
-.revies-button {
+.reviews-button {
   display: block;
   width: 222px;
   height: 50px;
@@ -82,7 +82,7 @@
     color var(--function-duration) var(--function-timing);
 }
 
-.revies-button:is(:hover, :focus) {
+.reviews-button:is(:hover, :focus) {
   background-color: var(--secondary-text-color);
   color: var(--primary-white-color);
 }
@@ -91,9 +91,10 @@
 
 .reviews-list .slick-list {
   overflow: unset;
+  width: 100%;
 }
 
-.slick-track {
+.reviews-list .slick-track {
   display: flex;
   gap: 28px;
   align-items: flex-start;
@@ -157,23 +158,59 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .reviews-list {
+    margin-bottom: 32px;
+  }
+
   .reviews-text {
     width: 335px;
+  }
+
+  .reviews-button {
+    width: 165px;
+    height: 41px;
+    font-size: 14px;
+    line-height: 1.21;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
   .container {
     width: 768px;
     padding-right: 32px;
     padding-left: 32px;
   }
+
+  .reviews-list {
+    margin-bottom: 50px;
+  }
+
   .reviews-text {
     width: 344px;
+  }
+
+  .reviews-title {
+    margin-bottom: 91px;
+  }
+
+  .reviews-button {
+    width: 222px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 1.22;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .reviews {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
   .container {
     width: 1200px;
     padding-right: 32px;
