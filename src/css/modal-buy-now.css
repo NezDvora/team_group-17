@@ -55,6 +55,8 @@ input {
 }
 
 .buy-now-modal-close-icon {
+  width: 24px;
+  height: 24px;
   stroke: var(--primary-text-color);
 }
 
@@ -279,9 +281,19 @@ textarea::placeholder {
     transform: translate(-50%, -50%) scale(1);
   }
 
+  .buy-now-modal-close-icon {
+    width: 28px;
+    height: 28px;
+  }
+
   .buy-now-modal-title {
     font-size: 24px;
     line-height: 1.17;
+  }
+
+  .buy-now-modal-wrap {
+    height: 426px;
+    overflow-y: auto;
   }
 
   .buy-now-product-list {
