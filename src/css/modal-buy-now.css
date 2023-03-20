@@ -75,8 +75,7 @@ input {
 }
 
 .buy-now-modal-wrap {
-  height: 89%;
-  padding-bottom: 32px;
+  height: 436px;
   overflow-y: auto;
 }
 
@@ -126,8 +125,8 @@ input {
 
 .buy-now-modal-form {
   margin-top: 32px;
-  padding-right: 14px;
-  padding-left: 14px;
+  padding-right: 10px;
+  padding-left: 10px;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -178,13 +177,17 @@ input {
 }
 
 .modal-tel-icon {
+  width: 24px;
+  height: 18px;
   position: absolute;
-  left: 14px;
+  left: 18px;
   top: 50%;
   transform: translatey(-50%);
 }
 
 .modal-card-icon {
+  width: 21.94px;
+  height: 12.89px;
   position: absolute;
   right: 14px;
   top: 50%;
@@ -230,6 +233,8 @@ textarea::placeholder {
 }
 
 .buy-now-modal-btn-wrap {
+  margin-top: 18px;
+  margin-left: 10px;
 }
 
 .buy-now-modal-send-btn {
@@ -309,10 +314,26 @@ textarea::placeholder {
     margin-top: 0;
   }
 
+  .modal-tel-icon {
+    width: 32px;
+    height: 24px;
+    left: 24px;
+  }
+
+  .modal-card-icon {
+    width: 30.17px;
+    height: 18.41px;
+    right: 24px;
+  }
+
   input::placeholder,
   textarea::placeholder {
     font-size: 18px;
     line-height: 1.22;
+  }
+
+  .tel {
+    padding-left: 74px;
   }
 
   .buy-now-modal-send-btn {

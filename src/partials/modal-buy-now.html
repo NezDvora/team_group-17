@@ -2,8 +2,8 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="buy-now-modal">
       <button type="button" class="buy-now-modal-close-btn" data-modal-close>
-        <svg class="buy-now-modal-close-icon" width="24" height="24">
-          <use href="../img/symbol-defs.svg#icon-x-close"></use>
+        <svg class="buy-now-modal-close-icon">
+          <use href="/img/symbol-defs.svg#icon-x-close"></use>
         </svg>
       </button>
       <p class="buy-now-modal-title"><span>buy</span> now</p>
@@ -142,7 +142,7 @@
                 placeholder="Phone number"
                 required
               />
-              <svg class="modal-tel-icon" width="23.69px" height="17.63px">
+              <svg class="modal-tel-icon">
                 <use href="../img/symbol-defs.svg#icon-flag"></use>
               </svg>
             </div>
@@ -151,7 +151,7 @@
             <label class="buy-now-input-lable">Card number</label>
             <div class="buy-now-input-wrap">
               <input
-                type="number"
+                type="text"
                 class="buy-now-modal-input"
                 name="modal-card"
                 pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|6(?:011|5[0-9]{2})[0-9]{12}|(?:2131|1800|35\d{3})\d{11})$"
@@ -159,7 +159,7 @@
                 placeholder="Enter card"
                 required
               />
-              <svg class="modal-card-icon" width="21.94px" height="12.89px">
+              <svg class="modal-card-icon">
                 <use href="../img/symbol-defs.svg#icon-mastercard"></use>
               </svg>
             </div>
@@ -175,12 +175,10 @@
               placeholder="Enter text"
             ></textarea>
           </div>
-          <div class="buy-now-modal-btn-wrap">
-            <button class="buy-now-modal-send-btn btn" type="submit">
-              Submit
-            </button>
-          </div>
         </form>
+      </div>
+      <div class="buy-now-modal-btn-wrap">
+        <button class="buy-now-modal-send-btn btn" type="submit">Submit</button>
       </div>
     </div>
   </div>
