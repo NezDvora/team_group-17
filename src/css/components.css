@@ -236,6 +236,8 @@
 @media screen and (min-width: 1200px) {
   .components {
     max-width: 1200px;
+    padding-top: 128px;
+    padding-bottom: 128px;
   }
   .components-order-two {
     order: 0;
