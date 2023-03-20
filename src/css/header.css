@@ -1,5 +1,4 @@
 .container-header {
-  
     margin-left: auto;
     margin-right: auto;
 }
@@ -46,6 +45,9 @@
   justify-content: space-between;
   width: 100%;
   padding-top: 20px;
+  padding-right: 32px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .menu-mobile {
@@ -170,6 +172,11 @@
   display: none;
 }
 
+@media screen and (min-width: 376px) {
+  .menu-mobile {
+      width: 220px;
+    }
+}
 @media screen and (min-width: 768px) {
 .header-desktop-vew {
   display: none;
@@ -187,15 +194,26 @@
     width: 32px;
     height: 32px;
   }
+  .header {
+    margin-left: 32px;
+    margin-right: 32px;
+    padding-right: 60px
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .header {
+    padding-right: 0;
+  }
 
   .header-desktop-vew {
       display: flex;
       display: flex;
         gap: 137px;
         align-items: center;
+        margin-left: 32px;
+        margin-right: 32px;
+          padding-right: 32px;
     }
 
   .burger-btn {

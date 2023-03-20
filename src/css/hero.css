@@ -8,16 +8,17 @@
     background-image: url(/img/./images_mobile/bg-hero-mobile.jpg);
     background-size: auto;
     height: 620px;
-    width: 100%;
+    
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
     border: 0px solid #000000;
     border-radius: 30px;
-    margin: 14px auto 72px auto;
+    margin: 14px 20px 72px 20px;
     padding-top: 395px;
-    padding-right: 20px;
+    
     padding-left: 20px;
+    
 }
 
 .hero-text {
@@ -29,6 +30,7 @@
     letter-spacing: -0.03em;
     color: #FFFFFF;
     padding-bottom: 32px;
+    padding-left: 20px;
     width: 290px;
     margin: 0;
 }
@@ -37,7 +39,9 @@
     display: flex;
     gap: 14px;
 }
-
+.hero-btn-tablet {
+    padding-left: 20px;
+}
 .btn-hero {
     display: flex;
     font-weight: 600;
@@ -134,10 +138,12 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero {
         background-image: url(/img/./images_tablet/bg-hero-tablet.jpg);
         height: 890px;
-        min-width: px;
+    
         margin-top: 24px;
         padding-top: 671px;
         margin-bottom: 50px;
+        margin-left: 32px;
+        margin-right: 32px;
     }
 
     .hero-text {
