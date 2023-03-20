@@ -1,11 +1,8 @@
 :root {
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  /* FONTS */
+  --regular: font-weight:400;
+  --medium: font-weight:500;
+  --bold: font-weight:600;
   /* COLOR */
   --primary-text-color:#111111;
   --secondary-text-color:#FD9222;
@@ -24,3 +21,30 @@
   --function-timing: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* @font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url(/src/fonts/Montserrat-Medium.ttf);
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+
+  font-family: 'Montserrat', sans-serif;
+  src: url(/src/fonts/Montserrat-Regular.ttf);
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+
+  font-family: 'Montserrat', sans-serif;
+  src: url(/src/fonts/Montserrat-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+body, button, link, textarea, input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+} */

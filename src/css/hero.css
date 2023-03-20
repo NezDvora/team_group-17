@@ -7,14 +7,14 @@
 
 
 .hero {
-    background-image: url(../img/./images_mobile/bg-hero-mobile.jpg);
+    background-image: url(/img/./images_mobile/bg-hero-mobile.jpg);
     background-size: auto;
     height: 620px;
     min-width: 335px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    border: solid #000000;
+    border: 0px solid #000000;
     border-radius: 30px;
     margin: 14px 20px 72px 20px;
     padding-top: 395px;
@@ -125,14 +125,14 @@
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero {
-        background-image: url(../img/./images_mobile/bg-hero-mobile@2x.jpg);
+        background-image: url(/img/./images_mobile/bg-hero-mobile@2x.jpg);
         
     }
 }
 
 @media screen and (min-width: 768px) {
     .hero {
-        background-image: url(../img/./images_tablet/bg-hero-tablet.jpg);
+        background-image: url(/img/./images_tablet/bg-hero-tablet.jpg);
         height: 890px;
         min-width: px;
         margin-top: 24px;
@@ -172,14 +172,14 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
-        background-image: url(../img/./images_tablet/bg-hero-tablet@2x.jpg);
+        background-image: url(/img/./images_tablet/bg-hero-tablet@2x.jpg);
     }
 }
 
 @media screen and (min-width: 1200px) {
 
     .hero {
-        background-image: url(../img/bg-hero-pc.jpg);
+        background-image: url(/img/bg-hero-pc.jpg);
         height: 600px;
         margin-top: 32px;
         padding-top: 381px;
@@ -197,6 +197,6 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .hero {
-        background-image: url(../img/bg-hero-pc@2x.jpg);
+        background-image: url(/img/bg-hero-pc@2x.jpg);
     }
 }

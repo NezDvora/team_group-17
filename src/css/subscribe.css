@@ -1,7 +1,7 @@
 .subscribe {
   max-width: 1440px;
   height: auto;
-  /* background-color: var(--accent-color); */
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(whisk-filled-with-melted-chocolate-close-up.jpg); */
   background-image: url(../img/images_mobile/bg-footer-mobile.jpg), var(--bg-grad-footer);
   background-repeat: no-repeat;
   background-position: center;
@@ -9,6 +9,8 @@
   text-align: center;
   padding-top: 62px;
   padding-bottom: 62px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -17,6 +19,14 @@
   .subscribe {
       background-image: url(../img/images_mobile/bg-footer-mobile@2x.jpg);
   }
+}
+
+.sub-cont {
+  max-width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subscribe-title {
@@ -32,13 +42,13 @@
 
 
 .subscribe-text {
-font-size: 14px;
-line-height: 1.3;
-text-align: center;
-letter-spacing: -0.02em;
-color: var(--primary-white-color);
-margin-bottom: 24px;
-
+  font-size: 14px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--primary-white-color);
+  margin-bottom: 24px;
+  
 }
 
 .subscribe-btn {
@@ -63,14 +73,17 @@ margin-bottom: 24px;
 }
 
 @media screen and (min-width: 376px) {
-  .container {
-      width: 346px;
+  .sub-cont {
+      width: 376px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-      width: 738px;
+  .sub-cont {
+      width: 768px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
 
   .subscribe {
@@ -89,9 +102,16 @@ margin-bottom: 24px;
           }
       }
   
+    
+
   .subscribe-title {
       font-size: 24px;
       line-height: 1.17;
+  }
+
+  .subscribe-text {
+    width: 467px;
+    text-align: center;
   }
 
   .subscribe-btn {
@@ -103,8 +123,8 @@ margin-bottom: 24px;
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-      width: 1160px;
+  .sub-cont {
+      width: 1200px;
   }
 
   .subscribe {
@@ -124,26 +144,3 @@ margin-bottom: 24px;
   }
 }
 
-/* MOBILE-MENU-0-767px */
-@media screen and (max-width: 375px){
-
-}
-@media screen and (min-width: 376px){
-
-}
-@media screen and (max-width: 767px){
-
-}
-
-/* TABLET-768-1200px */
-@media screen and (min-width: 768px){
-
-}
-@media screen and (max-width: 1199px){
-
-}
-
-/* PC-1200px-8 */
-@media screen and (min-width: 1200px){
-
-}
