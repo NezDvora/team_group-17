@@ -1,5 +1,5 @@
 
-.container-header {
+.container-hero {
     min-width: 320px;
         padding-top: 20px;
         padding-left: 20px;
@@ -171,7 +171,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero {
         background-image: url(/img/./images_tablet/bg-hero-tablet.jpg);
         height: 890px;
-        margin-top: 4px;
+        margin-top: 24px;
         padding-top: 671px;
         margin-bottom: 50px;
         margin-left: 32px;
@@ -215,7 +215,9 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 }
 
 @media screen and (min-width: 1200px) {
-
+.container-hero {
+    padding-top: 0;
+}
     .hero {
         background-image: url(/img/bg-hero-pc.jpg);
         height: 600px;
