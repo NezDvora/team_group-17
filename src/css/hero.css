@@ -1,23 +1,23 @@
 
 .container-header {
-    min-width: 375px;
-    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
 
 .hero {
     background-image: url(/img/./images_mobile/bg-hero-mobile.jpg);
     background-size: auto;
     height: 620px;
-    min-width: 335px;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
     border: 0px solid #000000;
     border-radius: 30px;
-    margin: 14px 20px 72px 20px;
+    margin: 14px auto 72px auto;
     padding-top: 395px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .hero-text {

@@ -1,6 +1,7 @@
 .container-header {
-  min-width: 375px;
-  padding: 0 20px;
+  
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo-header {
@@ -49,19 +50,17 @@
 
 .menu-mobile {
   position: fixed;
-  width: 220px;
+  width: 200px;
   height: 100%;
   top: 0;
   right: 0;
   z-index: 10;
   background-color: var(--primary-text-color);
+  transition: var(--function-timing), var(--function-duration);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
-  transform: translateX(100%);
-  transition: opacity var(--function-duration) var(--function-timing),
-    transform var(--function-duration) var(--function-timing);
+  transform: translate(100%);
 }
 
 .menu-mobile.is-open {
