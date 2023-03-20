@@ -1,7 +1,6 @@
 
 .container-hero {
     min-width: 320px;
-        padding-top: 20px;
         padding-left: 20px;
         padding-right: 20px;}
 
@@ -164,9 +163,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 
 @media screen and (min-width: 768px) {
-    .container-header {
+    .container-hero {
         padding: 0;
-        padding-top: 20px;
     }
     .hero {
         background-image: url(/img/./images_tablet/bg-hero-tablet.jpg);
