@@ -197,9 +197,14 @@
     width: 32px;
     height: 32px;
   }
-  .header {
+
+  .container-header{
     margin-left: 32px;
     margin-right: 32px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .header {
     padding: 0;
   }
 }
