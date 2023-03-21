@@ -18,6 +18,7 @@
   font-size: 14px;
   line-height: 0.77;
   letter-spacing: -0.03em;
+  gap: 4px;
 }
 
 .simply-header {
@@ -226,6 +227,9 @@
 @media screen and (min-width: 1200px) {
   .header {
     padding-right: 0;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .header-desktop-vew {
