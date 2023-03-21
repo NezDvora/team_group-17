@@ -92,7 +92,7 @@
   overflow: hidden;
 }
 
-.slick-track {
+.slick-list .slick-track {
   display: flex;
   gap: 18px;
 }
@@ -163,9 +163,9 @@
     padding-top: 100px;
   }
   .products-container {
-    max-width: 734px;
+    max-width: 768px;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 32px;
   }
   .products-title {
     line-height: 1.17;
@@ -184,7 +184,7 @@
     padding-top: 128px;
   }
   .products-container {
-    max-width: 1176px;
+    max-width: 1200px;
     width: 100%;
   }
 }
