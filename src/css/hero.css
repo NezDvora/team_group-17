@@ -19,7 +19,7 @@
     margin: 14px 0 72px 0;
     padding-top: 350px;
     
-    padding-left: 20px;
+    padding-left: 15px;
     
 }
 
@@ -124,8 +124,9 @@
     border-radius: 50%;
     border: none;
     background-color: #ffffff;
-    padding-top: 5px;
+    padding-top: 6px;
     transition: var(--function-timing), var(--function-duration);
+    text-align: center;
 }
 
 .header-desktop {
@@ -139,6 +140,7 @@
 
     .hero {
         padding-top: 395px;
+        padding-left: 0;
     }
 
     .hero-btn-tablet {
@@ -178,6 +180,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         margin-bottom: 50px;
         margin-left: 32px;
         margin-right: 32px;
+        padding-left: 20px;
     }
 
     .hero-text {
