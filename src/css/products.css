@@ -36,6 +36,7 @@
   align-items: center;
   width: 280px;
   height: 364px;
+  cursor: pointer;
 
   background: var(--primary-white-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
