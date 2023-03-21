@@ -124,8 +124,9 @@
     border-radius: 50%;
     border: none;
     background-color: #ffffff;
-    padding-top: 5px;
+    padding-top: 6px;
     transition: var(--function-timing), var(--function-duration);
+    text-align: center;
 }
 
 .header-desktop {
