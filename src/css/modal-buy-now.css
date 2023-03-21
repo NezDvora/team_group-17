@@ -96,9 +96,6 @@ input {
   border-radius: 100px;
 }
 
-.buy-now-product-item {
-}
-
 .buy-now-modal-form {
   margin-top: 32px;
   padding-right: 10px;
@@ -106,9 +103,6 @@ input {
   display: flex;
   flex-direction: column;
   gap: 18px;
-}
-
-.buy-now-modal-field {
 }
 
 .buy-now-input-lable {
