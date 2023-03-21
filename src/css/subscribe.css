@@ -32,6 +32,7 @@
 }
 
 .subscribe-title {
+  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -43,6 +44,7 @@
 }
 
 .subscribe-text {
+  font-family: 'Montserrat';
   font-size: 14px;
   line-height: 1.3;
   text-align: center;
