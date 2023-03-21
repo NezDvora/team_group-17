@@ -91,7 +91,7 @@
   color: rgba(17, 17, 17, 0.7);
 }
 
-.revies-button {
+.reviews-button {
   display: block;
   width: 222px;
   height: 50px;
@@ -108,7 +108,7 @@
     color var(--function-duration) var(--function-timing);
 }
 
-.revies-button:is(:hover, :focus) {
+.reviews-button:is(:hover, :focus) {
   background-color: var(--secondary-text-color);
   color: var(--primary-white-color);
 }
