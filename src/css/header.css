@@ -1,6 +1,13 @@
 .container-header {
-    margin-left: auto;
-    margin-right: auto;
+  min-width: 320px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  
 }
 
 .logo-header {
@@ -40,19 +47,11 @@
   stroke: var(--primary-text-color);
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding-top: 20px;
-  padding-right: 32px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
+
 
 .menu-mobile {
   position: fixed;
-  width: 200px;
+  width: 170px;
   height: 100%;
   top: 0;
   right: 0;
@@ -70,7 +69,7 @@
   visibility: visible;
   pointer-events: auto;
   transform: translateX(0);
-
+  right: 0;
 }
 
 
@@ -85,7 +84,7 @@
   background-color: transparent;
   padding: 0;
   margin-top: 20px;
-  margin-right: 20px;
+  margin-right: 24px;
 
 }
 
@@ -93,6 +92,7 @@
   stroke: var(--primary-white-color);
   width: 28px;
   height: 28px;
+  transition: var(--function-timing), var(--function-duration);
 }
 
 .cross-btn:focus .header-x,
@@ -102,6 +102,10 @@
 
 .desk-header:focus {
   color: var(--secondary-accent-color);
+}
+
+.desk-header {
+  transition: var(--function-timing), var(--function-duration);
 }
 
 .header-x:hover,
@@ -141,6 +145,10 @@
 
 }
 
+.icon-header {
+  transition: var(--function-timing), var(--function-duration);
+}
+
 .link-header-mobile .icon-header {
   fill: transparent;
   stroke: var(--primary-white-color);
@@ -174,8 +182,11 @@
 
 @media screen and (min-width: 376px) {
   .menu-mobile {
-      width: 220px;
+      width: 200px;
+      right: 0;
     }
+
+
 }
 @media screen and (min-width: 768px) {
 .header-desktop-vew {
@@ -183,6 +194,7 @@
 }
   .menu-mobile {
     width: 290px;
+    right: 14px;
   }
 
   .header-desktop {
@@ -194,10 +206,20 @@
     width: 32px;
     height: 32px;
   }
-  .header {
+
+  .container-header{
     margin-left: 32px;
     margin-right: 32px;
-    padding-right: 60px
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .header {
+    padding: 0;
+  }
+
+  .cross-btn {
+    margin-right: 36px;
   }
 }
 
@@ -211,9 +233,7 @@
       display: flex;
         gap: 137px;
         align-items: center;
-        margin-left: 32px;
-        margin-right: 32px;
-          padding-right: 32px;
+        
     }
 
   .burger-btn {

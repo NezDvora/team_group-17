@@ -66,6 +66,8 @@
     border: 1px solid var(--secondary-accent-color);
     background: var(--secondary-accent-color);
     border-radius: 100px;
+    transition: background-color 250ms var(--function-timing), 
+    color 250ms var(--function-timing);
   }
   
   .top-sellers-btn:is(:hover, :focus) {

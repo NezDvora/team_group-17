@@ -1,8 +1,10 @@
 
-.container-header {
-    margin-left: auto;
-    margin-right: auto;
-}
+.container-hero {
+    min-width: 320px;
+        padding-left: 20px;
+        padding-right: 20px;}
+
+    
 
 .hero {
     background-image: url(/img/./images_mobile/bg-hero-mobile.jpg);
@@ -14,12 +16,14 @@
     background-size: cover;
     border: 0px solid #000000;
     border-radius: 30px;
-    margin: 14px 20px 72px 20px;
-    padding-top: 395px;
+    margin: 14px 0 72px 0;
+    padding-top: 350px;
     
-    padding-left: 20px;
+    padding-left: 15px;
     
 }
+
+
 
 .hero-text {
     font-family: 'Montserrat';
@@ -30,17 +34,18 @@
     letter-spacing: -0.03em;
     color: #FFFFFF;
     padding-bottom: 32px;
-    padding-left: 20px;
-    width: 290px;
+    padding-left: 0;
+    width: 200px;
     margin: 0;
 }
+
 
 .hero-btn {
     display: flex;
     gap: 14px;
 }
 .hero-btn-tablet {
-    padding-left: 20px;
+    padding-left: 0;
 }
 .btn-hero {
     display: flex;
@@ -57,7 +62,9 @@
 .btn-i-hero {
     background: #FD9222;
     border: none;
-    width: 120px;
+    width: 100px;
+    transition: var(--function-timing), var(--function-duration);
+    cursor: pointer;
 }
 
 .btn-i-hero:hover,
@@ -69,7 +76,8 @@
 .btn-ii-hero {
     background-color: transparent;
     border: 1px solid #FFFFFF;
-    width: 159px;
+    width: 135px;
+    transition: var(--function-timing), var(--function-duration);
 }
 
 .btn-ii-hero:hover,
@@ -107,6 +115,7 @@
     width: 67px;
     padding: 0;
     margin: 0;
+    transition: var(--function-timing), var(--function-duration);
 }
 
 .btn-check-hero {
@@ -115,15 +124,40 @@
     border-radius: 50%;
     border: none;
     background-color: #ffffff;
-    padding-top: 5px;
-
+    padding-top: 6px;
+    transition: var(--function-timing), var(--function-duration);
+    text-align: center;
 }
 
 .header-desktop {
     display: none;
 }
+@media screen and (min-width: 376px) {
+    .hero-text {
+        padding-left: 20px;
+        width: 290px;
+    }
 
-@media screen and (max-width: 767px) {}
+    .hero {
+        padding-top: 395px;
+        padding-left: 0;
+    }
+
+    .hero-btn-tablet {
+        padding-left: 20px;
+    }
+
+    .btn-i-hero {
+        width: 120px;
+    }
+
+    .btn-ii-hero {
+        width: 159px;
+    }
+}
+@media screen and (max-width: 767px) {
+   
+}
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -135,15 +169,18 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 }
 
 @media screen and (min-width: 768px) {
+    .container-hero {
+        padding: 0;
+    }
     .hero {
         background-image: url(/img/./images_tablet/bg-hero-tablet.jpg);
         height: 890px;
-    
         margin-top: 24px;
         padding-top: 671px;
         margin-bottom: 50px;
         margin-left: 32px;
         margin-right: 32px;
+        padding-left: 20px;
     }
 
     .hero-text {
@@ -183,7 +220,9 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 }
 
 @media screen and (min-width: 1200px) {
-
+.container-hero {
+    padding-top: 0;
+}
     .hero {
         background-image: url(/img/bg-hero-pc.jpg);
         height: 600px;

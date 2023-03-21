@@ -1,6 +1,6 @@
 .how-its-made {
   border-color: var(--bg-primary-color);
-  padding-bottom: 72px;
+  /* padding-bottom: 72px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -14,6 +14,7 @@
 }
 
 .how-its-made-title {
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -62,6 +63,7 @@
 }
 
 .how-its-made-text {
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -76,6 +78,7 @@
 }
 
 .cook-choc-item {
+  font-family: 'Montserrat';
   font-style: normal;
   font-size: 14px;
   line-height: 1.29;
@@ -103,7 +106,7 @@ margin-bottom: 18px;
 
   .how-its-made {
       border-color: var(--bg-primary-color);
-      padding-bottom: 100px;
+      /* padding-bottom: 100px; */
   }
   .how-its-made-title {
       font-size: 24px;
@@ -133,7 +136,7 @@ margin-bottom: 18px;
   }
 
   .how-its-made {
-    padding-bottom: 129px;
+    /* padding-bottom: 129px; */
   }
 
   .how-its-made-list-wrap {
