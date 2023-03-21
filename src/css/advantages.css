@@ -1,21 +1,20 @@
 .advantages {
   padding-top: 29px;
   padding-bottom: 36px;
-  /* margin-right: auto;
-  margin-left: auto; */
   background-color: var(--accent-color);
 }
+
 .advantages-container {
-  /* margin-right: auto;
-  margin-left: auto; */
   padding-right: 20px;
   padding-left: 20px;
 }
+
 .advantages-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
 .advantages-icon {
   display: flex;
   width: 62px;
@@ -26,9 +25,11 @@
   justify-content: center;
   align-items: center;
 }
+
 .advantages-svg {
   fill: var(--secondary-text-color);
 }
+
 .advantages-subtitle {
   margin-top: 22px;
   margin-bottom: 18px;
@@ -37,6 +38,7 @@
   font-size: 18px;
   line-height: 1.22;
 }
+
 .advantages-text {
   font-size: 14px;
   line-height: 1.2;
@@ -58,6 +60,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
   .advantages-container {
     margin-right: auto;
     margin-left: auto;
@@ -71,6 +74,7 @@
     flex-wrap: wrap;
     gap: 32px;
   }
+
   .advantages-item {
     display: flex;
     flex-direction: column;
@@ -81,9 +85,11 @@
     justify-content: center;
     align-items: flex-start;
   }
+
   .advantages-item:last-child {
     justify-content: start;
   }
+
   .advantages-subtitle {
     margin-top: 22px;
     margin-bottom: 18px;
@@ -92,6 +98,7 @@
     font-size: 18px;
     line-height: 1.22;
   }
+
   .advantages-text {
     letter-spacing: -0.02em;
   }
@@ -102,6 +109,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
   .advantages-container {
     margin-right: auto;
     margin-left: auto;
@@ -109,23 +117,29 @@
     padding-left: 50px;
     max-width: 1200px;
   }
+
   .advantages-list {
     flex-wrap: nowrap;
     justify-content: space-between;
   }
+
   .advantages-item {
     justify-content: start;
   }
+
   .advantages-item:not(:last-child) {
     padding-right: 18px;
   }
+
   .advantages-item:last-child {
     width: 308px;
     padding-right: 0px;
   }
+
   .advantages-item {
     position: relative;
   }
+  
   .advantages-item:not(:last-child)::after {
     display: block;
     position: absolute;

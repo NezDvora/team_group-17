@@ -230,9 +230,6 @@ textarea::placeholder {
 
 /* ----------------------------- */
 
-@media screen and (min-width: 375px) {
-}
-
 @media screen and (min-width: 768px) {
   .buy-now-modal {
     position: absolute;

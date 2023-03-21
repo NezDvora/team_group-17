@@ -4,13 +4,10 @@
         padding-left: 20px;
         padding-right: 20px;}
 
-    
-
 .hero {
     background-image: url(/img/./images_mobile/bg-hero-mobile.jpg);
     background-size: auto;
     height: 620px;
-    
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -18,12 +15,8 @@
     border-radius: 30px;
     margin: 14px 0 72px 0;
     padding-top: 350px;
-    
     padding-left: 15px;
-    
 }
-
-
 
 .hero-text {
     font-family: 'Montserrat';
@@ -38,7 +31,6 @@
     width: 200px;
     margin: 0;
 }
-
 
 .hero-btn {
     display: flex;
@@ -155,9 +147,6 @@
         width: 159px;
     }
 }
-@media screen and (max-width: 767px) {
-   
-}
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -208,7 +197,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .menu-mobile {
         width: 290px;
     }
-
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),

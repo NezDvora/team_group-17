@@ -1,31 +1,27 @@
+@media screen and (min-width: 376px) {
+    .container-footer {
+    width: 376px;
+}
+}
 
+@media screen and (min-width: 768px) {
+    .container-footer {
+    width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+}
 
-
-  @media screen and (min-width: 376px) {
-      .container-footer {
-          width: 376px;
-      }
-  }
-
-  @media screen and (min-width: 768px) {
-      .container-footer {
-          width: 768px;
-          padding-right: 32px;
-          padding-left: 32px;
-      }
-  }
-
-  @media screen and (min-width: 1200px) {
-      .container-footer {
-          width: 1200px;
-      }
-  }
+@media screen and (min-width: 1200px) {
+    .container-footer {
+    width: 1200px;
+    }
+}
 
 .footer {
     background-color: var(--accent-color);
     padding-top: 32px;
     padding-bottom: 32px;
-    
 }
 
 .container-footer {
@@ -41,7 +37,6 @@
 }
 
 .footer-title {
-   
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
@@ -71,15 +66,11 @@
     margin-bottom: 14px;
 }
 
-.footer-address {}
-
 .footer-address-list {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
-
-.footer-address-item {}
 
 .footer-address-link {
     font-style: normal;
@@ -110,10 +101,6 @@
     transition: color 250ms var(--function-timing);
 }
 
-.footer-svg {}
-
-.footer-bottom {}
-
 .footer-bottom::before {
     content: '';
     display: block;
@@ -123,15 +110,11 @@
     position: relative;
 }
 
-.footer-nav {}
-
 .footer-bottom-list {
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
-
-.footer-bottom-item {}
 
 .footer-bottom-link {
     font-weight: 500;
@@ -169,38 +152,10 @@
     transition: background-color 250ms var(--function-timing);
 }
 
-/* MOBILE-MENU-0-767px
-@media screen and (max-width: 375px){
-
-}
-@media screen and (min-width: 376px){
-
-}
-@media screen and (max-width: 767px){
-
-}
-
-/* TABLET-768-1200px */
-/* @media screen and (min-width: 768px){
-
-}
-@media screen and (max-width: 1199px){
-
-}
-
-/* PC-1200px-8 */
-/* @media screen and (min-width: 1200px){
-
-} */
-
 @media screen and (min-width: 375px) {
     .footer-top-wrap {
         gap: 113px;
     }
-    
-
-
-    
 }
 
 @media screen and (min-width: 768px) {
@@ -254,9 +209,8 @@
     .footer-top-wrap {
         gap: 63px;
     }
-       
+
     .footer-bottom-link {
             position: relative;
         }
-        
 }
