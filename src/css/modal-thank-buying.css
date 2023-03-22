@@ -104,7 +104,10 @@
   transform: translate(-50%, -50%) scaleY(1);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 767px) {
   .reviews-modal-buying {
     width: 311px;
     height: 350px;
@@ -133,5 +136,16 @@
   .reviews-modal-buying-text {
     font-size: 14px;
     line-height: 1.14;
+  }
+  .reviews-modal-buying .modal {
+    width: 516px;
+    height: 414px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews-modal-buying .modal {
+    width: 516px;
+    height: 414px;
   }
 }
