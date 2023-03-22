@@ -105,7 +105,7 @@
   transform: translate(-50%, -50%) scaleY(1);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .reviews-modal-feedback {
     width: 311px;
     height: 350px;
@@ -133,5 +133,12 @@
   .reviews-modal-feedback-text {
     font-size: 14px;
     line-height: 1.14;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews-modal-feedback {
+    width: 516px;
+    height: 414px;
   }
 }
