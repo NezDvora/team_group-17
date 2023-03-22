@@ -20,8 +20,8 @@
   left: 50%;
   padding: 24px;
   transform: translate(-50%, -50%);
-  width: 516px;
-  height: 414px;
+  width: 311px;
+  height: 350px;
   background-image: url(../img/ezgif-modal.webp);
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -105,12 +105,16 @@
 }
 
 @media screen and (min-width: 375px) {
+  .reviews-modal-buying.modal {
+    width: 311px;
+    height: 350px;
+  }
 }
 
 @media screen and (min-width: 767px) {
-  .reviews-modal-buying {
-    width: 311px;
-    height: 350px;
+  .reviews-modal-buying.modal {
+    width: 516px;
+    height: 411px;
     padding: 14px;
     background-image: url(../img/images_mobile/ezgif-modal-mobile.webp);
   }
@@ -122,7 +126,6 @@
 
   .reviews-modal-buying-form {
     width: 219px;
-
     margin-left: 44px;
     margin-right: 24px;
     margin-top: 42px;
@@ -137,14 +140,10 @@
     font-size: 14px;
     line-height: 1.14;
   }
-  .reviews-modal-buying .modal {
-    width: 516px;
-    height: 414px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
-  .reviews-modal-buying .modal {
+  .reviews-modal-buying.modal {
     width: 516px;
     height: 414px;
   }
