@@ -93,7 +93,7 @@
           </div>
         </li>
       </ul>
-      <form class="buy-now-modal-form" id="buy-now-form">
+      <form class="buy-now-modal-form" id="buy-now-form" autocomplete="on">
         <div class="buy-now-modal-field">
           <label class="buy-now-input-lable">Personal information</label>
           <div class="buy-now-input-wrap person">
@@ -101,7 +101,7 @@
               type="text"
               class="buy-now-modal-input"
               name="modal-name"
-              pattern="[A-Za-z'-]{1,50}$"
+              pattern="[A-Za-z]{1,30}"
               placeholder="Name"
               required
             />
@@ -137,14 +137,17 @@
               class="buy-now-modal-input tel"
               name="modal-tel"
               pattern="^\+?[0-9]{1,3}\s?[0-9]{3,4}\s?[0-9]{4,6}$"
-              value="+380"
+              title="xx-xxx-xx-xx"
               size="13"
               placeholder="Phone number"
               required
             />
-            <svg class="modal-tel-icon">
-              <use href="/img/symbol-defs.svg#icon-flag"></use>
-            </svg>
+            <div class="buy-now-phone-decor">
+              <svg class="modal-tel-icon">
+                <use href="/img/symbol-defs.svg#icon-flag"></use>
+              </svg>
+              <span class="buy-now-label-phone-number">+380</span>
+            </div>
           </div>
         </div>
         <div class="buy-now-modal-field">
@@ -166,19 +169,21 @@
         </div>
         <div class="buy-now-modal-field">
           <label class="buy-now-input-lable" for="modal-comment">Comment</label>
-          <textarea
-            class="buy-now-modal-message"
-            name="modal-comment"
-            id="modal-comment"
-            placeholder="Enter text"
-            required
-          ></textarea>
+          <div class="buy-now-modal-message-wrap">
+            <textarea
+              class="buy-now-modal-message"
+              name="modal-comment"
+              id="modal-comment"
+              placeholder="Enter text"
+              required
+            ></textarea>
+          </div>
         </div>
       </form>
     </div>
     <div class="buy-now-modal-btn-wrap">
       <button
-        class="buy-now-modal-send-btn btn js-open-modal"
+        class="buy-now-modal-send-btn btn js-open-modal js-modal-close"
         type="submit"
         form="buy-now-form"
         data-modal="4"
