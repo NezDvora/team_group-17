@@ -81,8 +81,8 @@
 .modal-review-form {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  margin-top: 32px;
+  gap: 6px;
+  margin-top: 24px;
 }
 
 .buy-now-input-wrap {
@@ -131,7 +131,7 @@
 
   .modal-review-form {
     gap: 19px;
-    margin-top: 40px;
+    margin-top: 26px;
   }
 
   .buy-now-modal-message {

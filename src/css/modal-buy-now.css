@@ -60,6 +60,7 @@ input {
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  min-width: 0;
 }
 
 .buy-now-product-card {
@@ -115,12 +116,12 @@ input {
 
 .buy-now-input-wrap {
   position: relative;
-  margin-top: 8px;
 }
 
 .buy-now-modal-input {
   width: 100%;
   height: 45px;
+  margin-top: 8px;
   padding-right: 18px;
   padding-left: 18px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
@@ -146,13 +147,46 @@ input {
   margin-top: 14px;
 }
 
+/* 
+
+.buy-now-label-phone-input > .buy-now-label-input-phone {
+  padding-left: 106px;
+}
+
+ */
+
+.buy-now-phone-decor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
 .modal-tel-icon {
   width: 24px;
   height: 18px;
-  position: absolute;
-  left: 18px;
-  top: 50%;
-  transform: translatey(-50%);
+}
+
+.buy-now-label-phone-number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.214;
+  display: flex;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin-left: 8px;
+}
+
+.buy-now-phone-decor::after {
+  content: '';
+  width: 1.5px;
+  height: 25px;
+  max-height: 100%;
+  background-color: rgba(17, 17, 17, 0.05);
+  margin-left: 8px;
 }
 
 .modal-card-icon {
@@ -160,12 +194,15 @@ input {
   height: 12.89px;
   position: absolute;
   right: 14px;
-  top: 50%;
+  top: 31px;
   transform: translatey(-50%);
 }
 
-.buy-now-modal-message {
+.buy-now-modal-message-wrap {
   margin-top: 8px;
+}
+
+.buy-now-modal-message {
   width: 100%;
   height: 120px;
   padding: 16px;
@@ -199,7 +236,7 @@ textarea::placeholder {
 }
 
 .tel {
-  padding-left: 50px;
+  padding-left: 106px;
 }
 
 .buy-now-modal-btn-wrap {
@@ -226,6 +263,60 @@ textarea::placeholder {
 .buy-now-modal-send-btn:focus {
   background-color: var(--secondary-color-btn);
   color: var(--secondary-accent-color);
+}
+
+/* SLIDER */
+
+.buy-now-product-list .slick-list {
+  overflow: hidden;
+  width: 231px;
+}
+
+.buy-now-product-list .slick-list .slick-track {
+  display: flex;
+  gap: 18px;
+}
+
+.buy-now-product-list {
+  position: relative;
+}
+.buy-now-product-list .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+}
+.buy-now-product-list .slick-arrow.slick-prev {
+  left: 0;
+}
+.buy-now-product-list .slick-arrow.slick-next {
+  right: 0;
+}
+.buy-now-product-list .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  padding-inline-start: 0;
+}
+.buy-now-product-list .slick-dots button {
+  font-size: 0;
+  width: 13px;
+  height: 13px;
+  background-color: rgba(17, 17, 17, 0.1);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.buy-now-product-list .slick-dots li.slick-active button {
+  width: 28px;
+  height: 13px;
+  background-color: var(--secondary-text-color);
+  border-radius: 7px;
+
+  transition-property: width, background-color, border-radius;
+  transition-duration: var(--function-duration);
+  transition-timing-function: var(--function-timing);
 }
 
 /* ----------------------------- */
@@ -262,8 +353,8 @@ textarea::placeholder {
   }
 
   .buy-now-product-list {
-    flex-direction: row;
     justify-content: center;
+    gap: 0;
   }
 
   .buy-now-product-card {
@@ -278,6 +369,7 @@ textarea::placeholder {
   .buy-now-input-wrap.person {
     display: flex;
     gap: 21px;
+    align-items: flex-end;
   }
 
   .buy-now-modal-input {
@@ -297,10 +389,29 @@ textarea::placeholder {
     left: 24px;
   }
 
+  .buy-now-phone-decor {
+    top: 25px;
+    left: 24px;
+  }
+
+  .buy-now-label-phone-number {
+    font-size: 18px;
+    line-height: 1.22;
+    margin-left: 18px;
+  }
+
+  .buy-now-phone-decor::after {
+    content: '';
+    width: 2.5px;
+    height: 32px;
+    margin-left: 32px;
+  }
+
   .modal-card-icon {
     width: 30.17px;
     height: 18.41px;
     right: 24px;
+    top: 41px;
   }
 
   input::placeholder,
@@ -310,12 +421,25 @@ textarea::placeholder {
   }
 
   .tel {
-    padding-left: 74px;
+    padding-left: 177px;
   }
 
   .buy-now-modal-send-btn {
     min-width: 133px;
     height: 45px;
     padding: 14px 40px;
+  }
+
+  /* SLIDER */
+  .buy-now-product-list .slick-list {
+    width: 517px;
+  }
+
+  .buy-now-product-list .slick-dots button {
+    display: none;
+  }
+
+  .buy-now-product-list .slick-dots li.slick-active button {
+    display: none;
   }
 }
