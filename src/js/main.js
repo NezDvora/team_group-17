@@ -6,4 +6,3 @@ import './slider-reviews.js';
 import './slider-modal.js';
 import './modal.js';
 import './mobile-menu.js';
-import './no-active-link.js';
